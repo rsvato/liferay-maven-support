@@ -232,6 +232,20 @@ public abstract class AbstractLiferayMojo extends AbstractMojo {
 					method.invoke(urlClassLoader, uri.toURL());
 				}
 			}
+			
+			// workaround for http://issues.liferay.com/browse/MAVEN-69
+			// try to add service jar into classpath
+			File serviceTarget = new File("../" + project.getArtifactId() + "-service/target");
+			if (serviceTarget.exists()) {
+				Collection<File> files = FileUtils.listFiles(
+						serviceTarget, new String[] {"jar"}, false);
+	
+					for (File file : files) {
+						URI uri = file.toURI();
+						method.invoke(urlClassLoader, uri.toURL());
+					}
+			}
+			
 		}
 	}
 
