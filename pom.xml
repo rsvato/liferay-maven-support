@@ -6,7 +6,7 @@
 	<artifactId>maven-support</artifactId>
 	<packaging>pom</packaging>
 	<name>Liferay Maven 2 Support</name>
-	<version>6.1.1-SNAPSHOT</version>
+	<version>6.1.1-emdev.2</version>
 	<description>Parent project to support Maven 2 subprojects.</description>
 	<url>http://www.liferay.com</url>
 	<developers>
@@ -103,16 +103,18 @@
 		</pluginRepository>
 	</pluginRepositories>
 	<distributionManagement>
-		<repository>
-			<id>${liferay.repository.release.id}</id>
-			<name>${liferay.repository.release.name}</name>
-			<url>${liferay.repository.release.url}</url>
-		</repository>
-		<snapshotRepository>
-			<id>${liferay.repository.snapshots.id}</id>
-			<name>${liferay.repository.snapshots.name}</name>
-			<url>${liferay.repository.snapshots.url}</url>
-		</snapshotRepository>
+  		<repository>
+    		<id>emdev-private</id>
+    		<name>EmDev Private</name>
+    		<url>http://build.emdev.ru/nexus/content/repositories/emdev-private</url>
+    		<layout>default</layout>
+  		</repository>
+  		<snapshotRepository>
+    		<id>private-snapshots</id>
+    		<name>Private Snapshots</name>
+    		<url>http://build.emdev.ru/nexus/content/repositories/private-snapshots/</url>
+    		<layout>default</layout>
+  		</snapshotRepository>
 	</distributionManagement>
 	<profiles>
 		<profile>
