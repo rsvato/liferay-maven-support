@@ -4,7 +4,7 @@
 	<parent>
 		<artifactId>plugins</artifactId>
 		<groupId>com.liferay.maven</groupId>
-		<version>6.1.1-emdev.2</version>
+		<version>6.1.1-emdev.3</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
@@ -31,7 +31,7 @@
 		<dependency>
 			<groupId>com.liferay.portal</groupId>
 			<artifactId>portal-impl</artifactId>
-			<version>${liferay.version}</version>
+			<version>${liferay.impl.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.liferay.portal</groupId>
