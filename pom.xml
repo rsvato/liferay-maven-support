@@ -6,7 +6,7 @@
 	<artifactId>maven-support</artifactId>
 	<packaging>pom</packaging>
 	<name>Liferay Maven 2 Support</name>
-	<version>6.1.1-emdev.3</version>
+	<version>6.1.1-emdev.4</version>
 	<description>Parent project to support Maven 2 subprojects.</description>
 	<url>http://www.liferay.com</url>
 	<developers>
@@ -171,7 +171,7 @@
 	</profiles>
 	<properties>
 		<liferay.version>6.1.1</liferay.version>
-		<liferay.impl.version>6.1.1-emdev</liferay.impl.version>
+		<liferay.impl.version>6.1.1-emdev.1</liferay.impl.version>
 		<maven.version>2.0.10</maven.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<liferay.repository.release.id>sonatype-staging</liferay.repository.release.id>
