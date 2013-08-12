@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-  <plugins>
-    <plugin>
-      <name>Liferay Maven 2 Plugin</name>
-      <prefix>liferay</prefix>
-      <artifactId>liferay-maven-plugin</artifactId>
-    </plugin>
-  </plugins>
+  <groupId>com.liferay.maven</groupId>
+  <artifactId>plugins</artifactId>
+  <versioning>
+    <release>6.1.1-emdev.4</release>
+    <versions>
+      <version>6.1.1-emdev.4</version>
+    </versions>
+    <lastUpdated>20130812101123</lastUpdated>
+  </versioning>
 </metadata>
