@@ -9,11 +9,10 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.liferay.maven.archetypes</groupId>
-	<artifactId>liferay-portlet-richfaces-archetype</artifactId>
+	<artifactId>liferay-servicebuilder-archetype</artifactId>
 	<packaging>maven-archetype</packaging>
-	<name>Liferay Maven 2 Portlet RichFaces Archetype</name>
-	<version>6.1.1-SNAPSHOT</version>
-	<description>Provides an archetype to create Liferay RichFaces portlets.</description>
+	<name>Liferay Maven 2 ServiceBuilder Archetype</name>
+	<description>Provides an archetype to create Liferay Service Builder portlets.</description>
 	<build>
 		<extensions>
 			<extension>
