@@ -31,8 +31,8 @@
 		</license>
 	</licenses>
 	<scm>
-		<connection>scm:git:git@github.com:liferay/liferay-maven-support.git</connection>
-		<url>https://github.com/liferay/liferay-maven-support</url>
+		<connection>scm:git:git@github.com:rsvato/liferay-maven-support.git</connection>
+		<url>https://github.com/rsvato/liferay-maven-support</url>
 	</scm>
 	<build>
 		<plugins>
@@ -59,6 +59,35 @@
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
+			<plugin>
+			    <artifactId>maven-deploy-plugin</artifactId>
+			    <version>2.7</version>
+			    <configuration>
+			        <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
+			    </configuration>
+			</plugin>
+			<plugin>
+			            <groupId>com.github.github</groupId>
+			            <artifactId>site-maven-plugin</artifactId>
+			            <version>0.8</version>
+			            <configuration>
+			                <message>Maven artifacts for ${project.version}</message> 
+			                <noJekyll>true</noJekyll>                               
+			                <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> 
+			                <branch>refs/heads/maven-repo</branch>                   
+			                <includes><include>**/*</include></includes>
+			                <repositoryName>liferay-maven-support</repositoryName>     
+			                <repositoryOwner>rsvato</repositoryOwner> 
+			            </configuration>
+			            <executions>
+			              <execution>
+			                <goals>
+			                  <goal>site</goal>
+			                </goals>
+			                <phase>deploy</phase>
+			              </execution>
+			            </executions>
+			        </plugin>
 		</plugins>
 	</build>
 	<modules>
@@ -109,17 +138,10 @@
 	</pluginRepositories>
 	<distributionManagement>
   		<repository>
-    		<id>emdev-private</id>
-    		<name>EmDev Private</name>
-    		<url>http://build.emdev.ru/nexus/content/repositories/emdev-private</url>
-    		<layout>default</layout>
-  		</repository>
-  		<snapshotRepository>
-    		<id>private-snapshots</id>
-    		<name>Private Snapshots</name>
-    		<url>http://build.emdev.ru/nexus/content/repositories/private-snapshots/</url>
-    		<layout>default</layout>
-  		</snapshotRepository>
+		        <id>github</id>
+		        <name>GitHub ${project.artifactId} Repository</name>
+		        <url>https://raw.github.com/rsvato/${project.artifactId}/maven-repo/</url>
+		 </repository>
 	</distributionManagement>
 	<profiles>
 		<profile>
@@ -180,5 +202,6 @@
 		<liferay.repository.snapshots.id>sonatype-snapshot</liferay.repository.snapshots.id>
 		<liferay.repository.snapshots.name>Sonatype Snapshot Repository</liferay.repository.snapshots.name>
 		<liferay.repository.snapshots.url>http://oss.sonatype.org/content/repositories/snapshots</liferay.repository.snapshots.url>
+		<github.global.server>github</github.global.server>
 	</properties>
 </project>
