@@ -9,11 +9,11 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.liferay.maven.archetypes</groupId>
-	<artifactId>liferay-portlet-icefaces-archetype</artifactId>
+	<artifactId>liferay-portlet-jsf-archetype</artifactId>
 	<packaging>maven-archetype</packaging>
-	<name>Liferay Maven 2 Portlet ICEfaces Archetype</name>
+	<name>Liferay Maven 2 Portlet JSF Archetype</name>
 	<version>6.1.1-SNAPSHOT</version>
-	<description>Provides an archetype to create Liferay ICEfaces portlets.</description>
+	<description>Provides an archetype to create Liferay JSF portlets.</description>
 	<build>
 		<extensions>
 			<extension>
