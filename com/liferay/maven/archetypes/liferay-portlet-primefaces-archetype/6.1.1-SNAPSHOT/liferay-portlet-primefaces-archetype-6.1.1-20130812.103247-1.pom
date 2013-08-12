@@ -9,11 +9,11 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.liferay.maven.archetypes</groupId>
-	<artifactId>liferay-portlet-liferay-faces-alloy-archetype</artifactId>
+	<artifactId>liferay-portlet-primefaces-archetype</artifactId>
 	<packaging>maven-archetype</packaging>
-	<name>Liferay Maven 2 Portlet Liferay Faces Alloy Archetype</name>
+	<name>Liferay Maven 2 Portlet PrimeFaces Archetype</name>
 	<version>6.1.1-SNAPSHOT</version>
-	<description>Provides an archetype to create Liferay Faces Alloy portlets.</description>
+	<description>Provides an archetype to create Liferay PrimeFaces portlets.</description>
 	<build>
 		<extensions>
 			<extension>

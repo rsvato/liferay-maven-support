@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>com.liferay.maven.archetypes</groupId>
-  <artifactId>liferay-portlet-liferay-faces-alloy-archetype</artifactId>
+  <artifactId>liferay-portlet-primefaces-archetype</artifactId>
   <versioning>
     <versions>
       <version>6.1.1-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20130812103243</lastUpdated>
+    <lastUpdated>20130812103247</lastUpdated>
   </versioning>
 </metadata>
