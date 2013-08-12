@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>com.liferay.maven.archetypes</groupId>
-  <artifactId>liferay-portlet-icefaces-archetype</artifactId>
+  <artifactId>liferay-portlet-jsf-archetype</artifactId>
   <versioning>
     <versions>
       <version>6.1.1-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20130812095054</lastUpdated>
+    <lastUpdated>20130812095058</lastUpdated>
   </versioning>
 </metadata>
